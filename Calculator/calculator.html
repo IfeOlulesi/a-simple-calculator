@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> ASTERIX | BASIC CALCULATOR </title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+
+    <div id="container">
+
+        <!--begining of top navigation bar-->
+        <div id="top-nav-bar">
+            <a href="js_ball.html" id="home-link" class="top-nav-bar-content">HOME</a>
+            <a href="calculator.html" id="calc-link" class="top-nav-bar-content">CALCULATOR</a>
+            <a href="workshop.html" id="workshop" class="top-nav-bar-content">WORKSHOP</a>
+        </div>
+        <!--end of top nav bar-->
+        
+        <!--start of the calculator-->
+        <div id="calc-house">
+            <div id="num-display-top">
+                <input  id="num-display" readonly="readonly" placeholder="0"> </input>   
+            </div>
+
+            <!--this houses all the contents of the calculator-->
+            <div id="calculator-main-content">
+                <div id="row-1" class="calc-content-rows">
+                    <div id="ac" class="input-buttons" onclick="allClear()"> AC </div>
+                    <div class="input-buttons" id="7" onclick="inputInt(7)"> 7 </div>
+                    <div class="input-buttons" id="8" onclick="inputInt(8)"> 8 </div>
+                    <div class="input-buttons" id="9" onclick="inputInt(9)"> 9 </div>
+                    <div id="del" class="input-buttons" onclick="deleteLast()">
+                        <img src="glyphicons/delete-icon.jpg"> 
+                    </div>
+                </div>
+                <div id="row-2" class="calc-content-rows">
+                    <div class="input-buttons" id="/" onclick="inputInt('/')"> / </div>
+                    <div class="input-buttons" id="4" onclick="inputInt(4)"> 4 </div>
+                    <div class="input-buttons" id="5" onclick="inputInt(5)"> 5 </div>
+                    <div class="input-buttons" id="6" onclick="inputInt(6)"> 6 </div>
+                    <div class="input-buttons" id="X" onclick="inputInt('*')"> * </div>
+                </div>
+                <div id="row-3" class="calc-content-rows">
+                    <div class="input-buttons" id="-" onclick="inputInt('-')"> - </div>
+                    <div class="input-buttons" id="1" onclick="inputInt(1)"> 1 </div>
+                    <div class="input-buttons" id="2" onclick="inputInt(2)"> 2 </div>
+                    <div class="input-buttons" id="3" onclick="inputInt(3)"> 3 </div>
+                    <div class="input-buttons" id="plus" onclick="inputInt('+')"> + </div>
+                </div>
+                <div id="row-4" class="calc-content-rows">
+                    <div class="input-buttons" id="point" onclick="inputInt('.')" > . </div>
+                    <div class="input-buttons" id="e">e</div>
+                    <div class="input-buttons" id="0" onclick="inputInt(0)"> 0 </div>
+                    <div class="input-buttons" id="ans" onclick="dispPrevAns()"> Ans </div>
+                    <div class="input-buttons" id="equals" onclick="compute()"> = </div>
+                </div>   
+            </div>
+                
+            
+        </div>
+        <!--end of the calculator-->
+
+        <div id="extras">
+            <div id="extras-title-block">
+                <a id="history-title" class="extras-titles" onclick="display('history')">History</a>
+                <a id="settings-title" class="extras-titles" onclick="display('settings')">Settings</a>
+                <a id="notice-title" class="extras-titles" onclick="display('notice')">Notice</a>
+                <a id="feedback-title" class="extras-titles" onclick="display('feedback')">Feedback</a>
+            </div>
+            <div id="extras-content-block">
+                <div id="history-content">
+                </div>
+
+                <div id="settings-content">
+                    Direction of Text Display: 
+                    <select onchange="changeDisplayDirection(this)">
+                        <option value="rtl">Right-to-Left</option>
+                        <option value="ltr">Left-to-Right</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>

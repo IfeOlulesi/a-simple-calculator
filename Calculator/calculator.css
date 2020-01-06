@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#top-nav-bar {
+    width: 100%;
+    height: 37px;
+    background-color: lightgrey;
+    position: fixed;
+    font-size: 23px;
+    box-shadow: 0 3px 9px grey;
+}
+
+.top-nav-bar-content {
+    float: left;
+    background-color: #86aebd;
+    padding: 5px;
+    border-right: 1px solid #808080d6;
+}
+
+#home-link {
+    margin-left: 130px;
+    /*add shadow to home and calculator links*/
+}
+
+#calc-house {
+    float: left;
+    width: 350px;
+    height: 440px;
+    border: 1px solid grey;
+    margin: 80px 0 0 30%;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: #80CBC4;
+    box-shadow: 1px 1px 20px grey;
+}
+
+#num-display-top {
+    width: 310px;
+    height: 80px;
+    margin-left: 23px;
+    margin-top: 20px;
+    font-size: 30px;
+    direction: rtl;
+}
+
+#num-display{
+    width: inherit;
+    min-width: 280px;
+    /*max-width: 260px;*/
+    height: inherit;
+    min-height: 80px;
+    max-height: 80px;
+    font-size: inherit;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#calculator-main-content {
+    border: 1px solid #9a9898;
+    width: 314px;
+    height: 255px;
+    margin: 30px 0 0 18px;
+    background-color: #0e0f0f;
+}
+
+.calc-content-rows {
+    height: 62px;
+    width: inherit;
+}
+
+.input-buttons {
+    float: left;
+    height: 46px;
+    width: 60.8px;
+    border: 1px solid grey;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    padding-top:16px;
+}
+
+.input-buttons:hover {
+    background-color: grey;
+}
+
+/*times,plus,equals,del*/
+
+#extras {
+    float: right;
+    margin: 68px 10% 0 0;
+    width: 373px;
+    height: 450px;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 20px grey;
+}
+
+#extras-title-block {
+    width: inherit;
+    height: 35px;
+    background-color: #ffbb74;
+}
+
+.extras-titles {
+    float: left;
+    cursor: pointer;
+    font-size: 22px;
+    padding-top: 4px; 
+    padding-left: 4px;
+}
+
+#history-title {
+    margin: 0 0 0 10px;
+    height: 31px;
+    width: 77px;
+    padding-top: 4px;
+    text-align: center; 
+}
+
+#settings-title {
+    padding: 4px 4px 0 4px;
+    height: 30px;
+    background-color: #FF9800;
+}
+
+#extras-content-block {
+    width: 360px; 
+}
+
+#history-content {
+    float: right;
+    margin-right: -12px;
+    width: 368px;
+    height: 413px;
+    background-color: white;
+    text-align: right;
+    font-size: 19px;
+    overflow: auto;     
+    display: none;
+}
+
+#history-prototype {
+    width: 350px;
+    height: 70px;
+    display: block;
+    margin-left: -1.2px;
+}
+
+#history-prototype:hover {
+    background-color: #ffbb74;
+}
+
+#equation {
+    width: inherit;
+    height: 25px;
+}
+
+#solution {
+    width: inherit;
+    height: 41px;
+    font-size: 30px;
+}
+
+#settings-content {
+    padding-left: 4px;
+    padding-top: 4px;
+    position: absolute;
+    float: left;
+    width: 365px;
+    height: 411px;
+    background-color: white;
+    margin-left: 0px;
+    font-size: 20px;
+}

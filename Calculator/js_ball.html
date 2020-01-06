@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> JavaScript PlayGround</title>
+    <link rel="stylesheet" type="text/css" href="js_ball.css"> 
+
+</head>
+<body>
+    <div id="top-nav-bar">
+        <a href="js_ball.html" id="home-link" class="top-nav-bar-content">HOME</a>
+        <a href="calculator.html" id="calc-link" class="top-nav-bar-content">CALCULATOR</a>
+        <a href="workshop.html" id="workshop" class="top-nav-bar-content">WORKSHOP</a>
+    </div>
+    
+
+    <div id="objectCreator">
+        
+        <h2> OBJECT CONSTRUCTOR </h2> 
+        Name: <input type="text" id="name" oninput="update()"><br><br>
+        Type: <input type="text" id="type" oninput="update()" placeholder = "circle or square"><div id="wInput"></div><div></><br><br>
+        Color: <input type="color" id="color" oninput="update()" placeholder="pink / rgba() / #example">
+                <div id="sampleColor"></div><br><br>
+        Size: <input type="number" id= "size" oninput="update()" placeholder="A Positive Integer"><br><br>
+
+        <button type="submit" id = "update" onclick="update()"> UPDATE OBJECT</button>
+        
+        <h2 style= "margin-left: 20px;"  > OBJECT PROPERTIES</h2>
+        <div id="displayObject">
+            <div id="infoDisplay"></div>
+        <div><br>
+
+    </div>
+    <div id="realObject"></div>
+
+    <div id="calculator">
+        <div id="numberDisplay"></div>
+        
+    </div>
+
+    <!--beginning of javascript-->
+    <script type="text/javascript" src="js_ball.js"></script>
+</body>
+</html>

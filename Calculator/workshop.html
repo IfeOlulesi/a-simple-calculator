@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASTERIX | WORKSHOP</title>
+</head>
+    <body>
+        <style type="text/css">
+            * {margin: 0;}
+
+            a { text-decoration: none;
+                color: black;}
+
+            #top-nav-bar {
+                width: 100%;
+                height: 37px;
+                background-color: lightgrey;
+                position: fixed;
+                font-size: 23px;
+                box-shadow: 0 3px 9px grey;
+            }
+
+            .top-nav-bar-content {
+                float: left;
+                background-color: #86aebd;
+                padding: 5px;
+                border-right: 1px solid #808080d6;
+            }
+
+            #home-link {
+                margin-left: 130px;
+                /*add shadow to home and calculator links*/
+            }
+            
+            #box-shadow-test {
+                float: left;
+                width: 200px;
+                height: 200px;
+                border: 1px solid grey;
+                margin: 100px;
+                box-shadow: 4px 12px 10px grey, -10px -12px 10px blue;
+            }
+        </style>
+
+        <div id="container">
+
+            <!--begining of top navigation bar-->
+            <div id="top-nav-bar">
+                <a href="js_ball.html" id="home-link" class="top-nav-bar-content">HOME</a>
+                <a href="calculator.html" id="calc-link" class="top-nav-bar-content">CALCULATOR</a>
+                <a href="workshop.html" id="workshop" class="top-nav-bar-content">WORKSHOP</a>
+            </div>
+            <!--end of top nav bar-->
+            
+        <div id="box-shadow-test">
+            
+        </div>
+
+        </div>
+        <script type="text/javascript">
+            fruits = ['apple','grapes','plum','carrot','lemon'];
+            console.log(fruits);
+
+            delete(fruits[2]);
+            console.log(fruits);
+            
+            for (var i = 0; i < 2; i++) {
+                var concat = fruits.join(i);    
+            }
+            console.log(concat);
+        </script>
+    </body>
+</html>
