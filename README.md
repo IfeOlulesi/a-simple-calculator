@@ -1,2 +1,2 @@
-# web-development
-This houses all my projects relating to web development.
+# a-simple-calculator
+Decided to build my own calculator.
